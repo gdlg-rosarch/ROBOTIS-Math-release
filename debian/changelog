@@ -1,0 +1,10 @@
+ros-kinetic-robotis-math (0.1.0-0jessie) jessie; urgency=high
+
+  * first public release for Kinetic
+  * modified the package information files
+  * Add robotis_math, robotis_math is moved from ROBOTIS-Framework repository.
+  * Contributors: Jay-Song, pyo
+
+ -- pyo <pyo@robotis.com>  Tue, 16 Aug 2016 15:00:00 -0000
+
+
