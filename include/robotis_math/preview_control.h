@@ -14,40 +14,36 @@
 * limitations under the License.
 *******************************************************************************/
 
-/*
- * bezier_curve.h
- *
- *  Created on: 2016. 8. 12.
- *      Author: Jay Song
- */
+#ifndef ROBOTIS_MATH_PREVIEW_CONTROL_H_
+#define ROBOTIS_MATH_PREVIEW_CONTROL_H_
 
-#ifndef ROBOTIS_MATH_BEZIER_CURVE_H_
-#define ROBOTIS_MATH_BEZIER_CURVE_H_
+#define EIGEN_NO_DEBUG
+#define EIGEN_NO_STATIC_ASSERT
 
-#include <vector>
-
-#include "robotis_math_base.h"
 #include "robotis_linear_algebra.h"
+#include "robotis_math_base.h"
+
+#include <ros/ros.h>
+#include <stdint.h>
+#include <vector>
 
 namespace robotis_framework
 {
 
-class BezierCurve
+class PreviewControl
 {
 public:
-  BezierCurve();
-  ~BezierCurve();
+  PreviewControl();
+  virtual ~PreviewControl();
 
-  void setBezierControlPoints(const std::vector<Point2D>& points);
-
-  Point2D getPoint(double t);
+  Eigen::MatrixXd calcPreviewParam(double preview_time, double control_cycle,
+                                   double lipm_height,
+                                   Eigen::MatrixXd K, Eigen::MatrixXd P);
 
 private:
-  std::vector<Point2D> control_points_;
 
 };
 
 }
 
-
-#endif /* ROBOTIS_MATH_BEZIER_CURVE_H_ */
+#endif /* ROBOTIS_MATH_MINIMUM_JERK_TRAJECTORY_H_ */
