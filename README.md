@@ -1,3 +1,26 @@
+## robotis_math (kinetic) - 0.2.3-1
+
+The packages in the `robotis_math` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release robotis_math --track kinetic --rosdistro kinetic --edit` on `Tue, 20 Mar 2018 23:04:05 -0000`
+
+The `robotis_math` package was released.
+
+Version of package(s) in repository `robotis_math`:
+
+- upstream repository: https://github.com/ROBOTIS-GIT/ROBOTIS-Math.git
+- release repository: https://github.com/ROBOTIS-GIT-release/ROBOTIS-Math-release.git
+- rosdistro version: `0.2.3-0`
+- old version: `0.2.3-0`
+- new version: `0.2.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.12.1`
+- rosdistro version: `0.4.4`
+- vcstools version: `0.1.40`
+
+
 ## robotis_math (kinetic) - 0.2.3-0
 
 The packages in the `robotis_math` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release robotis_math --track kinetic --rosdistro kinetic --edit` on `Mon, 24 Apr 2017 09:56:31 -0000`
